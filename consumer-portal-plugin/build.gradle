@@ -1,0 +1,12 @@
+buildscript {
+    repositories {
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+    dependencies {
+        classpath "gradle.plugin.con.serdukow.test:MyCustomPlugin:1.0-SNAPSHOT"
+    }
+}
+
+apply plugin: "source-block-plugin"

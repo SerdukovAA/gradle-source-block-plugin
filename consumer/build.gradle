@@ -1,12 +1,14 @@
 buildscript {
     repositories {
         maven {
-            url "https://plugins.gradle.org/m2/"
+            url uri('../repo')
         }
     }
     dependencies {
-        classpath "gradle.plugin.con.serdukow.test:MyCustomPlugin:1.0-SNAPSHOT"
+        classpath group: 'serdukovaa.github.io',
+        name: 'source-block-plugin',
+        version: '1.0.0-SNAPSHOT'
     }
 }
 
-apply plugin: "org.serdukov.greeting"
+apply plugin: 'source-block-plugin'

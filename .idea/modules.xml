@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/consumer.iml" filepath="$PROJECT_DIR$/.idea/modules/consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/consumer-portal-plugin.iml" filepath="$PROJECT_DIR$/.idea/modules/consumer-portal-plugin.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/gradle-source-block-plugin.iml" filepath="$PROJECT_DIR$/.idea/gradle-source-block-plugin.iml" />
+      <module fileurl="file://D:\lerning\gradle-source-block-plugin\.idea\modules\plugin.iml" filepath="D:\lerning\gradle-source-block-plugin\.idea\modules\plugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/source-block-plugin.iml" filepath="$PROJECT_DIR$/.idea/modules/source-block-plugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/source-block-plugin_main.iml" filepath="$PROJECT_DIR$/.idea/modules/source-block-plugin_main.iml" group="source-block-plugin" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/source-block-plugin_test.iml" filepath="$PROJECT_DIR$/.idea/modules/source-block-plugin_test.iml" group="source-block-plugin" />
     </modules>
   </component>
 </project>

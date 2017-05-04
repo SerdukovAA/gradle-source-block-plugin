@@ -20,29 +20,29 @@ dependencies {
     compile localGroovy()
 }
 
-uploadArchives {
 
-    repositories {
-        mavenDeployer {
-            repository(url: uri('../repo'))
+
+group='serdukovaa.github.io'   //Group name makes easier to manager the packages.
+version='1.0.0-SNAPSHOT'
+
+pluginBundle {
+    website = 'https://serdukovaa.github.io/gradle-source-block-plugin/'
+    vcsUrl = 'https://github.com/SerdukovAA/gradle-source-block-plugin'
+    description = 'Plugin for the source-block approach'
+    tags = ['source-block']
+
+    plugins {
+        sourceBlockPlugin {
+            id = 'source-block-plugin'
+            displayName = 'SourceBlock plugin'
         }
     }
 }
 
-
-group='con.serdukow.test'   //Group name makes easier to manager the packages.
-version='1.0.2-SNAPSHOT'
-
-pluginBundle {
-    website = 'http://www.gradle.org/'
-    vcsUrl = 'https://github.com/gradle/gradle'
-    description = 'Test plugin description from here!'
-    tags = ['greetings12', 'salutations32', 'serdukovTest']
-
-    plugins {
-        greetingsPlugin {
-            id = 'org.serdukov.greeting'
-            displayName = 'Serdukov Gradle Greeting plugin'
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: uri('../repo'))
         }
     }
 }
