@@ -9,13 +9,7 @@ import org.gradle.api.Project
 
 class SourceBlockPlugin implements Plugin<Project> {
     void apply(Project project) {
-        def String message = 'Hello from SourceBlockPlugin'
-        // Add a task that uses the configuration
-        project.task('hello') {
-            doLast {
-                println message
-            }
-        }
+        project.task('addGitSourceBlock', type: AddGitBlockTask)
     }
 }
 

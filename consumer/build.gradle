@@ -1,5 +1,6 @@
 buildscript {
     repositories {
+        mavenCentral()
         maven {
             url uri('../repo')
         }
@@ -7,8 +8,15 @@ buildscript {
     dependencies {
         classpath group: 'serdukovaa.github.io',
         name: 'source-block-plugin',
-        version: '1.0.0-SNAPSHOT'
+        version: '1.0.1-SNAPSHOT'
     }
 }
 
+repositories {
+    mavenCentral()
+}
+
+
 apply plugin: 'source-block-plugin'
+
+
